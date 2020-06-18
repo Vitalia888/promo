@@ -1,0 +1,596 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(35, 19, 74);
+    color: #fff;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0 0 20px;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 35px;
+    margin: 0;
+}
+
+h3.header_margin-bottom {
+    margin-bottom: 70px;
+}
+
+h2.header_margin-bottom {
+    margin-bottom: 24px;
+}
+
+.entertainment {
+    width: 100%;
+    height: 600px;
+    min-height: 600px;
+    background-color: #000;
+}
+
+.spotlight-container {
+    background: url(../images/big.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    cursor: none;
+    position: relative;
+}
+
+.spotlight-container .spotlight {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 48px;
+}
+
+.page-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-footer {
+    padding: 24px 0;
+}
+
+
+/* sections */
+
+.section {
+    display: flex;
+    padding: 24px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section_gallery {
+    flex-direction: column;
+}
+
+.section_black {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 51%, rgba(0, 0, 0, 1) 70%, rgba(255, 255, 255, 0) 100%);
+    padding-bottom: 300px;
+    margin-bottom: -300px;
+}
+
+.section_rows {
+    flex-direction: column;
+}
+
+.section_margin-top {
+    margin-top: 100px;
+}
+
+
+/* gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    grid-auto-rows: 540px;
+    padding: 36px 0;
+}
+
+.gallery-card {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-card_event.gallery-card:hover .image-card {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+}
+
+.card__image {
+    display: flex;
+    justify-content: center;
+    height: calc(100% - 40px);
+}
+
+.card__title {
+    text-align: center;
+}
+
+.image-card {
+    height: 100%;
+    transition: all .2s ease-out;
+}
+
+.gallery_monsters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px 120px;
+    grid-auto-flow: dense;
+    grid-auto-rows: 500px;
+    padding-top: 0;
+}
+
+.gallery_monsters .gallery-card {
+    border: 2px solid #fff;
+    border-radius: 45px;
+    width: 100%;
+}
+
+.gallery_monsters .card__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.gallery_monsters .card__info-row {
+    display: flex;
+}
+
+.gallery_monsters .card__info-title {
+    margin-right: 6px;
+}
+
+.gallery_monsters .card__info-description_bold {
+    font-weight: bold;
+}
+
+.gallery_monsters .card__image_1 {
+    background-image: url(../images/monsters/longus.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+ .card__image_3 {
+    background-image: url(../images/monsters/minx.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card__image_2 {
+   background-image: url(../images/monsters/ficat.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.card__image_4 {
+   background-image: url(../images/monsters/draco.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   transform: scale(1.3);
+}
+.card__image_5{
+   background-image: url(../images/monsters/eye.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.card__image_6{
+   background-image: url(../images/monsters/кинг.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.card__image_7{
+   background-image: url(../images/monsters/fobius.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   transform: scale(0.9);
+}
+.card__image_8{
+   background-image: url(../images/monsters/fly.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.card__image_9{
+   background-image: url(../images/monsters/ew.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.card__image_10{
+   background-image: url(../images/monsters/cracen.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+
+/* informer */
+
+.informer {
+    display: flex;
+}
+
+.informer__column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.informer__column_right {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 24px;
+}
+
+.informer__column_left {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.informer__column_top {
+    justify-content: flex-start;
+}
+
+.informer__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.informer__image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 310px;
+    width: 486px;
+}
+
+.reserve-card {
+    background-image: url(../images/reserve_card.png);
+}
+
+.reserve-history-card {
+    background-image: url(../images/reserve_history.png);
+}
+
+.hand-card {
+    background-image: url(../images/hand.png);
+}
+
+.mountain-card {
+    background-image: url(../images/mountain.png);
+}
+
+.reserve-map-card {
+    background-image: url(../images/reserve_map.png);
+}
+
+.reserve-big-map {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 60%;
+    width: 100%;
+    background-image: url(../images/big-map.png);
+}
+
+
+/* button */
+
+.button {
+    display: inline-block;
+    text-transform: lowercase;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 16px 40px;
+    font-size: 24px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    transition: transform .2s ease-out;
+    cursor: url(./../images/hand1.png) 24 12, pointer;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(.95);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+/* name */
+
+.header__name {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+}
+
+.name {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* menu */
+
+.page-menu {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+}
+
+.main-menu {
+    position: relative;
+}
+
+.main-menu_phone {
+    display: none;
+    height: 40px;
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    background-color: rgb(35, 19, 74);
+    border-radius: 6px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .9);
+}
+
+.main-menu__container {
+    display: flex;
+    z-index: 100;
+}
+
+.main-menu_phone .main-menu__list {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+    height: 100%;
+    opacity: 1;
+    transition: .5s;
+    transition-delay: .2s;
+    overflow: hidden;
+    background-color: rgb(35, 19, 74);
+}
+
+.main-menu_phone .main-menu__list_hidden {
+    height: 0;
+    opacity: 0;
+}
+
+.main-menu__button {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    width: 40px;
+    outline: none;
+}
+
+.main-menu__button_close .menu__icon {
+    background: transparent;
+}
+
+.main-menu__button_close .menu__icon::before,
+.main-menu__button_close .menu__icon::after {
+    top: 0;
+}
+
+.main-menu__button_close .menu__icon::after {
+    transform: rotate(-45deg);
+}
+
+.main-menu__button_close .menu__icon::before {
+    transform: rotate(45deg);
+}
+
+.menu__icon {
+    display: block;
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+    width: 90%;
+    height: 4px;
+    transition: .4s;
+    border-radius: 4px;
+}
+
+.menu__icon::after,
+.menu__icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 4px;
+    transition: .4s;
+    border-radius: 4px;
+}
+
+.menu__icon::after {
+    top: 8px;
+}
+
+.menu__icon::before {
+    top: -8px;
+}
+
+.main-menu_large .main-menu__list {
+    align-items: center;
+}
+
+.main-menu__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu__item {
+    margin: 0;
+    padding: 6px 12px;
+    font-size: 26px;
+    line-height: 32px;
+    transition: transform .2s ease-out, text-shadow .2s ease-out;
+}
+
+.main-menu__item:hover {
+    transform: scale(.95);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1), 0 0 10px rgba(255, 100, 100, 1);
+}
+
+.main-menu__item_active {
+    font-weight: bold;
+}
+
+.main-menu__link,
+.main-menu__link:hover {
+    text-decoration: none;
+    color: #fff;
+    cursor: url(./../images/hand1.png) 24 12, pointer;
+}
+
+
+/* table tickets */
+
+.table_tickets {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+}
+
+.table_tickets td {
+    height: 115px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.table_tickets tr:first-child td {
+    border-top: none;
+}
+
+.table_tickets tr:last-child td {
+    border-bottom: none;
+}
+
+.table_tickets td:first-child {
+    border-left: none;
+}
+
+.table_tickets td:last-child {
+    border-right: none;
+}
+
+
+/* footer */
+
+.page-footer {
+    margin-bottom: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 56px;
+}
+
+.logo {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 140px;
+    width: 130px;
+}
+
+.footer__contacts {
+    width: 50%;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__title {
+    text-align: left;
+    padding-bottom: 40px;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.contacts__info {
+    text-align: left;
+    vertical-align: top;
+}
+
+.contacts__text {
+    margin: 0;
+    padding-bottom: 12px;
+}

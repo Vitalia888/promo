@@ -1,0 +1,61 @@
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 24px;
+    }
+    .entertainment {
+        height: 300px;
+        min-height: 300px;
+    }
+    .page-paddings {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .main-menu_large {
+        display: none;
+    }
+    .section_margin-top {
+        margin-top: 40px;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .informer {
+        flex-direction: column;
+    }
+    .informer__column {
+        width: 100%;
+        padding: 12px 0;
+        box-sizing: border-box;
+    }
+    .informer__column_right {
+        margin-left: 0;
+    }
+    .informer__image {
+        height: 170px;
+        width: 100%;
+    }
+    .gallery_monsters .gallery-card {
+        border-radius: 12px;
+    }
+    .gallery_monsters .card__info {
+        padding: 6px 12px;
+    }
+    .table_tickets td {
+        height: 40px;
+        padding: 4px 6px;
+        font-size: 14px;
+    }
+    .button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+    .page-footer {
+        margin-bottom: 0;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer__contacts {
+        width: 100%;
+    }
+}

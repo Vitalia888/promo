@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/font.css">
+    <link rel="stylesheet" href="./assets/styles/common.css">
+    <link rel="stylesheet" href="./assets/styles/desktop.css">
+    <link rel="stylesheet" href="./assets/styles/pad.css">
+    <link rel="stylesheet" href="./assets/styles/phone.css">
+    <title>Монстропарк - Заповедник</title>
+</head>
+
+<body>
+    <header class="page-header page-paddings">
+        <div class="page-header__name">
+            <h1 class="name">Монстропарк</h1>
+        </div>
+        <div class="page-menu">
+            <div class="main-menu main-menu_large">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item">
+                        <a class="link main-menu__link" href="./index.html">Главная</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="link main-menu__link main-menu__item_active" href="./reserves.html">Заповедник</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="link main-menu__link" href="./monsters.html">Монстры</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="link main-menu__link" href="./tickets.html">Билеты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-menu main-menu_phone">
+                <div class="main-menu__container">
+                    <button class="main-menu__button">
+                        <div class="menu__icon"></div>
+                    </button>
+                </div>
+                <ul class="main-menu__list main-menu__list_hidden">
+                    <li class="main-menu__item">
+                        <a class="link main-menu__link" href="./index.html">Главная</a>
+                    </li>
+                    <li class="main-menu__item main-menu__item_active">
+                        <a class="link main-menu__link" href="./reserves.html">Заповедник</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="link main-menu__link" href="./monsters.html">Монстры</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="link main-menu__link" href="./tickets.html">Билеты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="page-content">
+        <section class="section page-paddings section_rows">
+            <h2>Заповедник</h2>
+            <div class="informer">
+                <div class="informer__column informer__column_top">
+                    <h3>История</h3>
+                    <div class="informer__container">
+                        <p class="informer__text">
+                            Заповедник чудовищ «МОНСТРОПАРК» — это место, где живут различные виды монстров из разных частей мира. Все обитатели заповедника найдены не только в лесах или на темных переулках улиц, но и прямо в домах и квартирах. Вы задавались вопросами: «Что шуршит
+                            у меня под кроватью?» или «Куда пропала еда из холодильника?». Если вы хотите познакомиться с виновниками этих ситуаций, то стоит посетить наш парк.
+                        </p>
+                    </div>
+                </div>
+                <div class="informer__column informer__column_right">
+                    <div class="informer__image reserve-history-card"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section page-paddings section_rows section_black">
+            <h3 class="header_margin-bottom">Карта</h3>
+            <div class="reserve-big-map"></div>
+        </section>
+        <section class="section section_margin-top page-paddings section_rows section_black">
+            <h3 class="header_margin-bottom">Интерактивная карта</h3>
+            <div class="informer">
+                <div class="informer__column informer__column_left">
+                    <div class="informer__image reserve-map-card"></div>
+                </div>
+                <div class="informer__column">
+                    <div class="informer__container">
+                        <p class="informer__text">
+                            Интерактивная веб-карта заповедника чудовищ МОНСТРОПАРКА поможет посетителям ориентироваться в пространстве этого места. Карта предоставляет короткую, но важную информацию об основных зонах заповедника. Кроме того, в качестве развлечения можно пройти
+                            короткий квест, спрятанный на карте.
+                        </p>
+                    </div>
+                    <div class="informer__container button-container">
+                        <button class="button" onclick="location.href='https://vitalia888.github.io/map/'">Перейти</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer page-paddings">
+        <h2>Контакты</h2>
+        <div class="footer-content">
+            <div class="footer__contacts contacts">
+                <div class="contacts__row">
+                    <div class="contacts__cell contacts__title">Адрес</div>
+                    <div class="contacts__cell contacts__info">ул. Страха стр. 66</div>
+                </div>
+                <div class="contacts__row">
+                    <div class="contacts__cell contacts__title">Телефоны</div>
+                    <div class="contacts__cell contacts__info">
+                        <p class="contacts__text">+7 (495) 666-13-00 </p>
+                        <p class="contacts__text">+7 (499) 128-82-10</p>
+                    </div>
+                </div>
+                <div class="contacts__row">
+                    <div class="contacts__cell contacts__title">E-mail</div>
+                    <div class="contacts__cell contacts__info">Monsterpark.com</div>
+                </div>
+            </div>
+            <div class="footer__logo">
+                <div class="logo"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
