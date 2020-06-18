@@ -120,7 +120,10 @@ h2.header_margin-bottom {
     grid-auto-rows: 540px;
     padding: 36px 0;
 }
-
+.gallery_events {
+  transform: scale(1.1);
+  margin-top: 2%;
+}
 .gallery-card {
     height: 100%;
     margin: auto;
@@ -268,6 +271,7 @@ h2.header_margin-bottom {
 .informer__column_left {
     flex-direction: row;
     justify-content: flex-start;
+    margin-right: 24px;
 }
 
 .informer__column_top {
@@ -305,6 +309,7 @@ h2.header_margin-bottom {
 
 .reserve-map-card {
     background-image: url(../images/reserve_map.png);
+    transform: scale(1.5);
 }
 
 .reserve-big-map {
@@ -314,6 +319,7 @@ h2.header_margin-bottom {
     padding-top: 60%;
     width: 100%;
     background-image: url(../images/big-map.png);
+    transform: scale(1.18);
 }
 
 
